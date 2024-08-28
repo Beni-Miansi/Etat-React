@@ -1,0 +1,118 @@
+/* App.css */
+
+/* Style global pour l'application */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Container principal */
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre principal */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Formulaire des tâches */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Liste des tâches */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style pour chaque tâche */
+.task-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-left: 4px solid #007bff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.task-item.completed {
+  background-color: #e0ffe0;
+  border-left-color: #28a745;
+}
+
+.task-item h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.task-item p {
+  margin: 0 0 15px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Boutons pour les actions sur les tâches */
+.task-item button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.task-item button:first-of-type {
+  background-color: #28a745;
+}
+
+.task-item button:nth-of-type(2) {
+  background-color: #ffc107;
+}
+
+.task-item button:last-of-type {
+  background-color: #dc3545;
+}
+
+.task-item button:hover {
+  opacity: 0.9;
+}
